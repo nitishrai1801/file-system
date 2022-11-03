@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  redis:
+    image: redis
+    container_name: file-system-redis
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - 6379:6379
+  api:
+    restart: always
+    build: .
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      REDIS_URL: redis:6379
+      CHOKIDAR_USEPOLLING: 'true'
+      CHOKIDAR_INTERVAL: 1000
+    depends_on:
+      - mongo_db
+      - redis
+    volumes:
+    - .:/usr/src/app
+
+  mongo_db:
+    container_name: mongo_db
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongo_db:/data/db
+    ports:
+      - '27017:27017'
+    environment:
+      - MONGO_URI=mongodb://mongo_db:27017
+      - DB_NAME=${MONGO_DB_NAME}
+      - Name=Nitish
+volumes: 
+ mongo_db: {}
