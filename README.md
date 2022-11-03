@@ -18,4 +18,6 @@
 
 - ### To test this endpoint, a sample CSV file is attached in the path ./assets
 
+# Prerequisites
 
+- ### Docker should be up and running in your system.
