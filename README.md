@@ -1,5 +1,11 @@
 # file-system
 
+# Prerequisites
+
+- ### Docker should be up and running in your system.
+
+# Steps to run the Application
+
 - ### Pull the application from the github link
 
 - ### Open your terminal/command prompt
@@ -18,6 +24,11 @@
 
 - ### To test this endpoint, a sample CSV file is attached in the path ./assets
 
-# Prerequisites
+# DB Data Result
+![image info](./assets/MongoDBDataSS.png)
 
-- ### Docker should be up and running in your system.
+# Run Unit Test
+- ### To start the application, RUN command:  docker-compose up 
+- ### RUN command:  npm run test 
+
+
