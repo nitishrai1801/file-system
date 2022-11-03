@@ -4,7 +4,7 @@
 
 - ### Open your terminal/command prompt
 
-- ### RUN the command:  docker-compose up
+- ### To start the application, RUN command:  docker-compose up 
 
 - ### Open an Rest API Client Thunder Client or POSTMAN and create a new POST Request
 
@@ -18,4 +18,6 @@
 
 - ### To test this endpoint, a sample CSV file is attached in the path ./assets
 
+# Prerequisites
 
+- ### Docker should be up and running in your system.
