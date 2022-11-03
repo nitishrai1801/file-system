@@ -10,10 +10,12 @@
 
 - ### Enter the url:- http://localhost:5000/user/upload-csv
 
-
-
-- ### File to run is attached
-
 - ### Attach a file as in the screenshot with the field name - file under form body
 
 - ### Execute it.
+
+![image info](./assets/postmanSS.png)
+
+- ### To test this endpoint, a sample CSV file is attached in the path ./assets
+
+
