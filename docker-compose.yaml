@@ -20,7 +20,7 @@ services:
       - mongo_db
       - redis
     volumes:
-    - .:/usr/src/app
+    - .:/app
 
   mongo_db:
     container_name: mongo_db
